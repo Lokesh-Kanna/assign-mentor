@@ -75,7 +75,7 @@ app.put("/assign-student", async (req, res) => {
     res.send({ Message: "The student already has a mentor" });
   }
 });
-// TO-DO: Delete the changed student from the previous mentor's array
+
 app.put("/change-mentor", async (req, res) => {
   const data = req.body;
   const allStudents = await showAllStudents();
